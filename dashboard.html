@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ProfitX</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2>ProfitX Dashboard</h2>
+    </header>
+    <section class="container">
+        <h3>Generate Trading Signal</h3>
+        <label for="currentPrice">Current Price:</label>
+        <input type="text" id="currentPrice" placeholder="e.g., 1000">
+        <label for="atr">ATR:</label>
+        <input type="text" id="atr" placeholder="e.g., 50">
+        <label for="stochastic">Stochastic:</label>
+        <input type="text" id="stochastic" placeholder="e.g., 80">
+        <button id="generateSignal" class="button-primary">Generate Signal</button>
+        
+        <h4>Trading Signal:</h4>
+        <p id="tp1">TP1:</p>
+        <p id="tp2">TP2:</p>
+        <p id="tp3">TP3:</p>
+        <p id="sl">SL:</p>
+    </section>
+    <script src="/js/signals.js"></script>
+</body>
+</html>
